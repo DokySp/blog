@@ -17,8 +17,8 @@
         font-weight: 800;
         color: white;
         font-style: italic;
-        padding-top: 65px;
+        padding-top: 70px;
         font-size: 75px;
-        text-shadow: 0px 3px 10px #00000099;
+        text-shadow: 0px 3px 7px #00000055;
     }
 </style>

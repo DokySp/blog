@@ -43,7 +43,7 @@
 
 <style scoped>
   #body {
-    background-color: gray;
+    background-color: #333333;
     width: 100%;
     text-align: center;
 

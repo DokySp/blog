@@ -3,16 +3,16 @@
         <table class="item">
             <tr>
                 <td>
-                    HOME
+                    <router-link to="/">HOME</router-link>
                 </td>
                 <td>
-                    ABOUT
+                    <router-link to="/about">ABOUT</router-link>
                 </td>
                 <td>
-                    CONTACT
+                    <router-link to="/contact">CONTACT</router-link>
                 </td>
                 <td>
-                    GITHUB
+                    <a href="https://github.com/dokysp" target="_blank">GITHUB</a>
                 </td>
             </tr>
         </table>
@@ -21,23 +21,41 @@
 
 <script>
     export default {
-    
+
     }
 </script>
 
 <style scoped>
     .view {
-        width: 100%;
-        height: 100%;
-    }
-
-    .item {
-        width: 100%;
-        height: 100%;
-        text-align: center;
+        height: 50px;
+        width: 700px;
+        border-radius: 20px;
         background-color: #00000044;
-
+        user-select: none;
+    }
+    
+    .item {
+        height: 100%;
+        width: 92%;
+        text-align: center;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .item td {
+        width: 25%;
+        border-spacing: 3px;
+    }
+    
+    .item tr :hover {
+        background-color: #22222288;
+        border-radius: 5px;
+    }
+    
+    .item tr a {
         color: white;
+        font-weight: 600;
         font-style: italic;
+        text-decoration: none;
     }
 </style>

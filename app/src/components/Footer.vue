@@ -5,15 +5,15 @@
 </template>
 
 <script>
-export default {
-
-}
+    export default {
+    
+    }
 </script>
 
 <style scoped>
-.view {
-    background-color: red;
-    width: 100%;
-    height: 100%;
-}
+    .view {
+        background-image: linear-gradient(45deg, #009468, #154386);
+        width: 100%;
+        height: 100%;
+    }
 </style>
