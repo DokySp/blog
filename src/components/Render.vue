@@ -2,15 +2,20 @@
   <div id="body">
     <div id="article">
       <div v-html="output"></div>
+      <comments></comments>
     </div>
   </div>
 </template>
 
 <script>
   import marked from 'marked';
-  
+  import Comments from './Comments'
   
   export default {
+  
+    components: {
+      Comments,
+    },
   
     data() {
       return {
@@ -31,7 +36,7 @@
     created() {
       // https://codeday.me/ko/qa/20190406/255817.html
       const xmlhttp = new XMLHttpRequest();
-      xmlhttp.open('GET', `./${this.fileName}`, false);
+      xmlhttp.open('GET', `./_posts/${this.fileName}`, false);
       xmlhttp.send();
       if (xmlhttp.status === 200) {
         this.result = xmlhttp.responseText;
@@ -46,13 +51,12 @@
     background-color: #333333;
     width: 100%;
     text-align: center;
-
   }
   
   #article {
     border-radius: 12px;
     margin: 20px 0 20px 0;
-    padding: 30px 40px 100px 40px;
+    padding: 30px 40px 60px 40px;
     display: inline-block;
     background-color: white;
     text-align: left;
