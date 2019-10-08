@@ -36,7 +36,7 @@
     created() {
       // https://codeday.me/ko/qa/20190406/255817.html
       const xmlhttp = new XMLHttpRequest();
-      xmlhttp.open('GET', `./_posts/${this.fileName}`, false);
+      xmlhttp.open('GET', `./posts/${this.fileName}`, false);
       xmlhttp.send();
       if (xmlhttp.status === 200) {
         this.result = xmlhttp.responseText;
